@@ -6,4 +6,4 @@ Here are the projects:
 
 -  Basic TCP Server
 
-...This is a basic TCP server and client model written in python3 where server will echo back whatever client sent
+   This is a basic TCP server and client model written in python3 where server will echo back whatever client sent
