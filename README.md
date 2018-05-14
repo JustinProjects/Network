@@ -4,6 +4,6 @@ This repository includes various networking programs. These projects are inspire
 
 Here are the projects:
 
--  Basic TCP Server
+-  [***Basic TCP Server***](basic_tcp)
 
    This is a basic TCP server and client model written in python3 where server will echo back whatever client sent
