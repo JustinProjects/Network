@@ -7,3 +7,7 @@ Here are the projects:
 -  [***Basic TCP Server***](basic_tcp)
 
    This is a basic TCP server and client model written in python3 where server will echo back whatever client sent
+
+-  [***Basic UDP Server***](basic_udp)
+
+   This is a basic UDP server and client model written in python3 where server will echo back whatever client sent

@@ -18,9 +18,9 @@ def Main():
         data = c.recv(1024)
         if not data:
             break
-        print ("from connected user: " + str(data))
-        data = str(data)
-        print ("sending: " + str(data))
+        data = data.decode('utf-8')
+        print ("from connected user: " + data)
+        print ("sending: " + data)
         c.send(data.encode('utf-8'))
 
     c.close()
