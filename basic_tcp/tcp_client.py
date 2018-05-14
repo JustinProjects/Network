@@ -9,9 +9,9 @@ def Main():
 
 	message = input('-> ')
 	while message != 'q':
-		s.send(message)
+		s.send(message.encode('utf-8'))
 		data = s.recv(1024)
-		print ('Received from server: ' + str(data))
+		print ('Received from server: ' + data.decode('utf-8'))
 		message = input('-> ')
 	s.close()
 

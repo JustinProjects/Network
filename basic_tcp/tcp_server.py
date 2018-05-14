@@ -19,9 +19,9 @@ def Main():
         if not data:
             break
         print ("from connected user: " + str(data))
-        data = str(data).upper()
+        data = str(data)
         print ("sending: " + str(data))
-        c.send(data)
+        c.send(data.encode('utf-8'))
 
     c.close()
 
