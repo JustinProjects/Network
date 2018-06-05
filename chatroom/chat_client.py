@@ -13,7 +13,7 @@ def receiving(name, sock):
                     data, addr = sock.recvfrom(1024)
                     print (data.decode('utf-8'))
             except:
-                pass
+                time.sleep(0.2)
             finally:
                 tLock.release()
 
@@ -29,10 +29,11 @@ s.setblocking(0)
 rT = threading.Thread(target=receiving, args=('RecvThread', s))
 rT.start()
 
+print("Please type \033[1m hello")
 alias = input('Name: ')
 message = input(alias + ' -> ')
 
-while message != 'q':
+while message != 'q' or message != 'quit':
     if message != '':
         m = alias + " : " + message
         s.sendto(m.encode('utf-8'), server)
