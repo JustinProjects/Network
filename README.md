@@ -12,6 +12,6 @@ Here are the projects:
 
    This is a basic UDP server and client model written in python3 where server will echo back whatever client sent
 
--  [***Basic Chat Server***](basic_chatroom)
+-  [***Chat Server***](basic_chatroom)
 
    This is a chatroom using Python Flask Framework and flask-socketio to communicate between clients in real time.
